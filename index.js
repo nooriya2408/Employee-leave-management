@@ -8,9 +8,10 @@ import { leavetyperouter } from "./Routes/Leavetype.js";
 import { employeerouter } from "./Routes/Employees.js";
 import { departmentrouter } from "./Routes/Department.js";
 import { leaverequestrouter } from "./Routes/Leaverequest.js";
-import { config } from "dotenv";
-config();
+import dotenv from 'dotenv';
+import db from './utils/db.js'
 
+dotenv.config();
 const app = express();
 const port = 3001;
 

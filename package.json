@@ -5,14 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon  index.js"
   },
   
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    
+    "nodemon": "^3.0.3",
     "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -25,8 +25,6 @@
     "mysql2": "^3.7.1",
     
     "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.3"
   }
+  
 }
