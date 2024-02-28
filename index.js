@@ -20,6 +20,9 @@ app.use(cors({
   methods:['GET',"POST","PUT","DELETE"],
   credentials:true
 }));
+app.get('/',(req, res)=>{
+  res.send("this is a employee leave management API")
+})
 app.use(express.json());
 app.use('/auth',adminRouter)
 app.use('/admin',leavetyperouter)
